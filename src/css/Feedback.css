@@ -16,29 +16,11 @@ body {
 .nav-item,
 nav-link {
     list-style: disc;
-    margin-left: 30px;
-}
-
-.nav-about,
-.nav-inner-about {
-    list-style: disc;
-    margin: 10px 0px 0px 10px;
-    color: #6e778c;
-    text-decoration: none;
+    margin-left: 20px;
 }
 
 .img-thumbnail {
     width: 169px;
-}
-
-.pin {
-    border: 1px solid black;
-    width: 32px;
-    margin-left: 7px;
-    margin-top: 7px;
-    border-radius: 38px;
-    box-shadow: 1px 0px 1px black;
-    background: white;
 }
 
 .fa-magnifying-glass:before,
@@ -47,27 +29,10 @@ nav-link {
     margin-left: 6px;
 }
 
-.room {
-    border: 1px solid black;
-    width: 30px;
-    margin-left: 44px;
-    border-radius: 21px;
-    box-shadow: 1px 0px 1px black;
-}
-
-.zero {
-    border: 1px solid black;
-    width: 16px;
-    margin-bottom: 16px;
-    border-radius: 20px;
-    margin-left: -2px;
-    background: white;
-}
-
 .flex {
     BORDER: 1px solid black;
-    height: 52px;
-    width: 259px;
+    height: auto;
+    width: auto;
     text-align: center;
     padding: 12px;
     border-radius: 30px;
@@ -79,9 +44,9 @@ nav-link {
 
 .fles {
     border: 1px solid black;
-    height: 51px;
+    height: auto;
     padding: 12px;
-    width: 297px;
+    width: auto;
     background: darkblue;
     text-align: center;
     border-radius: 30px;
@@ -90,6 +55,127 @@ nav-link {
 
 .fles a {
     text-decoration: none;
+}
+
+
+/* Media queries for responsiveness */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .nav-item,
+    .nav-link {
+        margin-left: 8px;
+        /* Reduce margin for small screens */
+    }
+    .img-thumbnail {
+        width: 120px;
+        /* Reduce image size for small screens */
+    }
+    .pin {
+        width: 25px;
+        /* Reduce pin size for small screens */
+        margin-left: 5px;
+        margin-top: 5px;
+        border-radius: 20px;
+    }
+    .room {
+        width: 25px;
+        /* Reduce room size for small screens */
+        margin-left: 30px;
+        border-radius: 15px;
+    }
+    .zero {
+        width: 12px;
+        /* Reduce zero size for small screens */
+        margin-bottom: 12px;
+        margin-left: -2px;
+    }
+    .flex {
+        width: 200px;
+        /* Adjust width for small screens */
+    }
+    .fles {
+        width: 250px;
+        /* Adjust width for small screens */
+    }
+}
+
+
+/* Large screens */
+
+@media (min-width: 1200px) {
+    .nav-item,
+    .nav-link {
+        margin-left: 15px;
+        /* Increase margin for large screens */
+    }
+    .img-thumbnail {
+        width: 200px;
+        /* Increase image size for large screens */
+    }
+    .pin {
+        width: 40px;
+        /* Increase pin size for large screens */
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 30px;
+    }
+    .room {
+        width: 40px;
+        /* Increase room size for large screens */
+        margin-left: 60px;
+        border-radius: 25px;
+    }
+    .zero {
+        width: 20px;
+        /* Increase zero size for large screens */
+        margin-bottom: 20px;
+        margin-left: -3px;
+    }
+    .flex {
+        width: 300px;
+        /* Adjust width for large screens */
+    }
+    .fles {
+        width: 350px;
+        /* Adjust width for large screens */
+    }
+}
+
+
+/* new */
+
+
+/*  Media queries for responsiveness  */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        flex-basis: 100%;
+        /* Allow collapse content to take full width */
+    }
+    .navbar-nav {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+    .navbar-nav .nav-item {
+        text-align: center;
+        /* Center-align items */
+    }
+    .navbar-nav .nav-item+.nav-item {
+        margin-top: 10px;
+        /* Add some space between items */
+    }
+    .fles {
+        width: 100%;
+        /* Make appointment button full width */
+        text-align: center;
+        /* Center-align button */
+    }
 }
 
 
@@ -132,6 +218,77 @@ nav-link {
     font-size: 15px;
     line-height: 25px;
     font-weight: 500;
+}
+
+
+/* Media queries for responsiveness */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .hero-container {
+        margin: 0 10px;
+        /* Reduce margin for small screens */
+    }
+    .dr-img {
+        height: 300px;
+        /* Reduce image height for small screens */
+        border-radius: 15px;
+        /* Reduce border radius for small screens */
+    }
+    .hero-section {
+        margin: 20px;
+        /* Reduce margin for small screens */
+    }
+    .hero-title h1 {
+        font-size: 40px;
+        /* Reduce font size for small screens */
+    }
+    .hero-icon i {
+        margin: 10px;
+        /* Reduce margin for small screens */
+    }
+    .hero-inner-title h3 {
+        font-size: 12px;
+        /* Reduce font size for small screens */
+        line-height: 20px;
+        /* Reduce line height for small screens */
+    }
+}
+
+
+/* Large screens */
+
+@media (min-width: 1200px) {
+    .hero-container {
+        margin: 0 40px;
+        /* Increase margin for large screens */
+    }
+    .dr-img {
+        height: 600px;
+        /* Increase image height for large screens */
+        border-radius: 40px;
+        /* Increase border radius for large screens */
+    }
+    .hero-section {
+        margin: 50px;
+        /* Increase margin for large screens */
+    }
+    .hero-title h1 {
+        font-size: 80px;
+        /* Increase font size for large screens */
+    }
+    .hero-icon i {
+        margin: 20px;
+        /* Increase margin for large screens */
+    }
+    .hero-inner-title h3 {
+        font-size: 18px;
+        /* Increase font size for large screens */
+        line-height: 30px;
+        /* Increase line height for large screens */
+    }
 }
 
 
@@ -210,6 +367,103 @@ nav-link {
 }
 
 
+/* Media queries for responsiveness */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .appoint-section {
+        height: auto;
+        /* Adjust height for small screens */
+        margin: 50px 20px;
+        /* Adjust margin for small screens */
+    }
+    .appoint-content {
+        width: 90%;
+        /* Adjust width for small screens */
+        height: auto;
+        /* Adjust height for small screens */
+    }
+    #appoint-heading {
+        font-size: 40px;
+        /* Adjust font size for small screens */
+    }
+    #appoint-para {
+        font-size: 16px;
+        /* Adjust font size for small screens */
+    }
+    .appoint-form {
+        height: auto;
+        /* Adjust height for small screens */
+        width: 90%;
+        /* Adjust width for small screens */
+        margin: 10px auto;
+        /* Center the form */
+    }
+    .appoint-form-input {
+        width: 80%;
+        /* Adjust width for small screens */
+    }
+    .appoint-form textarea {
+        width: 90%;
+        /* Adjust width for small screens */
+    }
+    .appoint-form button {
+        width: 90%;
+        /* Adjust width for small screens */
+    }
+}
+
+
+/* Medium and Large screens */
+
+@media (min-width: 769px) {
+    .appoint-section {
+        height: 900px;
+        /* Keep original height for medium and large screens */
+        width: 90%;
+        /* Adjust width for medium and large screens */
+        margin: 70px auto;
+        /* Center the section */
+    }
+    .appoint-content {
+        width: 70%;
+        /* Keep original width for medium and large screens */
+        height: 200px;
+        /* Keep original height for medium and large screens */
+    }
+    #appoint-heading {
+        font-size: 50px;
+        /* Keep original font size for medium and large screens */
+    }
+    #appoint-para {
+        font-size: 19px;
+        /* Keep original font size for medium and large screens */
+    }
+    .appoint-form {
+        height: 580px;
+        /* Keep original height for medium and large screens */
+        width: 80%;
+        /* Keep original width for medium and large screens */
+        margin: 10px auto;
+        /* Center the form */
+    }
+    .appoint-form-input {
+        width: 40%;
+        /* Keep original width for medium and large screens */
+    }
+    .appoint-form textarea {
+        width: 85%;
+        /* Keep original width for medium and large screens */
+    }
+    .appoint-form button {
+        width: 85%;
+        /* Keep original width for medium and large screens */
+    }
+}
+
+
 /* rating section */
 
 .rating-section {
@@ -219,6 +473,37 @@ nav-link {
 
 .rating-section h1 {
     font-weight: 600;
+}
+
+
+/* Media queries for responsiveness */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .rating-section {
+        margin-bottom: 40px;
+        /* Adjust margin for small screens */
+    }
+    .rating-section h1 {
+        font-weight: 500;
+        /* Adjust font weight for small screens */
+    }
+}
+
+
+/* Medium and Large screens */
+
+@media (min-width: 769px) {
+    .rating-section {
+        margin-bottom: 80px;
+        /* Keep original margin for medium and large screens */
+    }
+    .rating-section h1 {
+        font-weight: 600;
+        /* Keep original font weight for medium and large screens */
+    }
 }
 
 
@@ -232,8 +517,53 @@ nav-link {
 .rest {
     float: left;
     text-align: center;
-    height: 178px;
+    height: auto;
 }
 
 
-/* responsive code */
+/* Media queries for responsiveness */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .reacts {
+        width: 100%;
+        overflow: hidden;
+        /* Prevents elements from overlapping */
+    }
+    .rest {
+        width: 100%;
+        /* Makes each item occupy full width */
+        float: none;
+        /* Reset float property */
+        text-align: center;
+        /* Center-align content */
+        height: auto;
+        /* Allow height to adjust based on content */
+        margin-bottom: 20px;
+        /* Add some space between items */
+    }
+}
+
+
+/* Medium and Large screens */
+
+@media (min-width: 769px) {
+    .reacts {
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        /* Use flexbox layout */
+        justify-content: space-between;
+        /* Distribute items evenly */
+    }
+    .rest {
+        flex: 1;
+        /* Distribute available space evenly among items */
+        text-align: center;
+        height: 178px;
+        margin-bottom: 0;
+        /* Remove margin added for small screens */
+    }
+}
