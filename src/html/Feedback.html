@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="../css/Feedback.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        /* Styles for hiding default radio buttons */
+        
+        .rating input[type="radio"] {
+            display: none;
+        }
+        /* Styles for star icons */
+        
+        .rating label {
+            font-size: 40px;
+            color: #ccc;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        /* Styles for filling stars when selected */
+        
+        .rating input[type="radio"]:checked~label {
+            color: #ffdd00;
+        }
+        /* Style for hover effect */
+        
+        .rating label:hover {
+            color: #ffdd00;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header Code -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white;">
+        <div class="container-fluid" style=' background-color: white;'>
+            <img src="https://xcare-demo.pbminfotech.com/demo1/wp-content/uploads/sites/3/2024/01/logo.svg" alt="..." class="img-thumbnail">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown" style="list-style: none;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      HOME
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-about">
+                        <a class="nav-inner-about" href="../html/AboutUs.html">AboutUs</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">SERVICES</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">BLOG</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">CONTACT US</a>
+                    </li>
+                    <div class="pin "><i class="fa-sharp fa-solid fa-magnifying-glass "></i></div>
+                    <div class="room " style=" background: white; "><i class="fa-solid fa-bag-shopping " style="margin-left: 6px; margin-top: 10px; "></i></div>
+                    <div class="zero "><i class="fa-sharp fa-solid fa-0 " style="margin-left: 1px; "></i></div>
+
+                </ul>
+
+                <form class="d-flex ">
+                    <div class="fles ">
+                        <a href="../html/Appointment.html ">MAKE AN APPOINTMENT</a></div>
+                    <div class="center-con ">
+                        <div class="round ">
+                            <div id="cta ">
+                                <span class="arrow primera next "></span>
+                                <span class="arrow segunda next "></span>
+                            </div>
+                </form>
+                </div>
+                </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div class="hero-container ">
+        <div class="dr-img ">
+
+            <div class="hero-section ">
+                <div class="hero-title ">
+                    <h1>Feedback</h1>
+                </div>
+                <div class="hero-inner-title ">
+                    <h3>Xcare</h3>
+                    <i class="pbmit-base-icon-right-1 "></i>
+                    <h3>Feedback</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Form -->
+
+    <div class="appoint-section ">
+        <div class="appoint-content ">
+            <h1 id="appoint-heading ">Feedback Form</h1>
+            <p id="appoint-para ">We strive to improve the quality of care and value the suggestions of our customers. Provide your valuable feedback to improve our services.
+
+
+            </p>
+        </div>
+        <div class="appoint-form ">
+
+            <input type="text " placeholder="Your Name * " class="appoint-form-input ">
+            <input type="email " placeholder="Your Email * " class="appoint-form-input "> <br>
+            <input type="" placeholder="Your Phone * " class="appoint-form-input ">
+            <input type="datetime-local" placeholder=" " class="appoint-form-input "> <br>
+            <select name=" " id=" " class="appoint-form-input ">Choose Department
+                <option class="appoint-form-input ">Choose Department</option>
+                <option class="appoint-form-input ">Pathology</option>
+                <option class="appoint-form-input ">Opthamalogy</option>
+                <option class="appoint-form-input ">Radiology</option>
+                <option class="appoint-form-input ">Surgery</option>
+            </select>
+            <select name=" " id=" " class="appoint-form-input ">Choose Doctor
+                <option class="appoint-form-input ">Select location</option>
+                <option class="appoint-form-input ">Vijay Nagar ,Indore</option>
+                
+            </select><br>
+            <textarea name=" ">Give Your feedback here...    </textarea> <br>
+            <button type="submit ">SUBMIT NOW</button>
+        </div>
+    </div>
+
+    <!-- rating section -->
+
+    <div class="rating-section">
+        <h3>Rating</h3>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+        </div>
+    </div>
+    <!-- footer section -->
+
+    <div class="card" style="height: 300px;
+    position: absolute;
+    width: 485px;">
+        <img src="https://w0.peakpx.com/wallpaper/1016/905/HD-wallpaper-geometric-art-shapes-white-background-white-background.jpg" class="card-img-top" alt="..." style='    position: relative;
+      width: 465px;
+      height: 324px;'>
+        <img src="https://xcare-demo.pbminfotech.com/demo1/wp-content/uploads/sites/3/2024/01/logo.svg" class="card-img-top" alt="..." style="margin-top: 38px;
+      margin-left: 46px;
+      position: absolute; width: 250px;">
+        <div class="card-body" style="   margin-top: 128px;
+      color: black;
+      position: absolute;
+      font-size: large;">
+            <p style="    text-align: left;
+        margin-top: 20px;">The healthcare arena there was a felt need of developing new as well as upgrading the existing functioning.This is the world best hospital.</p>
+            <span style="padding: 10px;"><i class="fa-brands fa-facebook"></i></span>
+            <span style="padding: 10px; "><i class="fa-brands fa-square-instagram"></i></span>
+            <span style="padding: 10px;"><i class="fa-solid fa-hashtag"></i></span>
+            <span style="padding: 10px;"><i class="fa-solid fa-stethoscope"></i></span>
+        </div>
+    </div>
+
+    <!-- footer part -->
+    <div class="card" style="width:64%;
+    height: 300px;
+    margin-left: 485px;">
+        <h5 class="card-title" style=" font-size: xx-large;
+     margin-top: 25px;
+     margin-left: 10px;
+     font-family: inherit;color: #0a4275;">There is Only One Thing In The World I Want And That Is Hospital</h5>
+        <img src="https://img.freepik.com/free-photo/3d-render-realistic-medical-stethoscope-color-background_460848-10589.jpg" class="card-img-top" alt="..." style="width: 22%;
+      margin-top: 43px;">
+
+        <div class="card-body" style="width: 100%;
+      position: absolute;
+      margin-top: 135px;height: 166px;box-shadow: -2px 5px 8px #888888;
+  ">
+            <div class="react">
+                <div class="rest" style="    width: 29%;
+      float: left;">
+                    <h5 style="color: #0a4275;">Usefull links</h5>
+                    <p>Company</p>
+                    <p>About</p>
+                    <p>Contact</p>
+                </div>
+                <!-- <div class="react"> -->
+                <div class="rest" style="float: left;
+            width: 29%;">
+                    <h5 style="color: #0a4275;">Working Time</h5>
+                    <p>Mon - Fri: 9.00am - 5.00pm</p>
+                    <p>Saturday: 10.00am - 6.00pm</p>
+                    <p>Sunday Closed</p>
+                </div>
+                <!-- <div class="card-body"> -->
+                <!-- <div class="reacts"> -->
+                <div class="rest" style="width: 29%;">
+                    <h5 style="color: #0a4275;">Our Address</h5>
+                    <p>Old Westbury 256, New York</p>
+                    <p>15 vijay nagar</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+            <!-- <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+    </div>
+
+</body>
+
+
+</body>
+
+</html>
