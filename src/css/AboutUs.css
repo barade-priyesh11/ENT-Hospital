@@ -16,29 +16,11 @@ body {
 .nav-item,
 nav-link {
     list-style: disc;
-    margin-left: 30px;
-}
-
-.nav-about,
-.nav-inner-about {
-    list-style: disc;
-    margin: 10px 0px 0px 10px;
-    color: #6e778c;
-    text-decoration: none;
+    margin-left: 20px;
 }
 
 .img-thumbnail {
     width: 169px;
-}
-
-.pin {
-    border: 1px solid black;
-    width: 32px;
-    margin-left: 7px;
-    margin-top: 7px;
-    border-radius: 38px;
-    box-shadow: 1px 0px 1px black;
-    background: white;
 }
 
 .fa-magnifying-glass:before,
@@ -47,27 +29,10 @@ nav-link {
     margin-left: 6px;
 }
 
-.room {
-    border: 1px solid black;
-    width: 30px;
-    margin-left: 44px;
-    border-radius: 21px;
-    box-shadow: 1px 0px 1px black;
-}
-
-.zero {
-    border: 1px solid black;
-    width: 16px;
-    margin-bottom: 16px;
-    border-radius: 20px;
-    margin-left: -2px;
-    background: white;
-}
-
 .flex {
     BORDER: 1px solid black;
-    height: 52px;
-    width: 259px;
+    height: auto;
+    width: auto;
     text-align: center;
     padding: 12px;
     border-radius: 30px;
@@ -79,9 +44,9 @@ nav-link {
 
 .fles {
     border: 1px solid black;
-    height: 51px;
+    height: auto;
     padding: 12px;
-    width: 297px;
+    width: auto;
     background: darkblue;
     text-align: center;
     border-radius: 30px;
@@ -90,6 +55,86 @@ nav-link {
 
 .fles a {
     text-decoration: none;
+}
+
+
+/* Media queries for responsiveness */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .nav-item,
+    .nav-link {
+        margin-left: 8px;
+        /* Reduce margin for small screens */
+    }
+    .img-thumbnail {
+        width: 120px;
+        /* Reduce image size for small screens */
+    }
+    .flex {
+        width: 200px;
+        /* Adjust width for small screens */
+    }
+    .fles {
+        width: 250px;
+        /* Adjust width for small screens */
+    }
+}
+
+
+/* Large screens */
+
+@media (min-width: 1200px) {
+    .nav-item,
+    .nav-link {
+        margin-left: 15px;
+        /* Increase margin for large screens */
+    }
+    .img-thumbnail {
+        width: 200px;
+        /* Increase image size for large screens */
+    }
+    .flex {
+        width: 300px;
+        /* Adjust width for large screens */
+    }
+    .fles {
+        width: 350px;
+        /* Adjust width for large screens */
+    }
+}
+
+
+/*  Media queries for responsiveness  */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        flex-basis: 100%;
+        /* Allow collapse content to take full width */
+    }
+    .navbar-nav {
+        flex-direction: column;
+        /* Stack items vertically */
+    }
+    .navbar-nav .nav-item {
+        text-align: center;
+        /* Center-align items */
+    }
+    .navbar-nav .nav-item+.nav-item {
+        margin-top: 10px;
+        /* Add some space between items */
+    }
+    .fles {
+        width: 100%;
+        /* Make appointment button full width */
+        text-align: center;
+        /* Center-align button */
+    }
 }
 
 
@@ -135,6 +180,34 @@ nav-link {
 }
 
 
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+    }
+    .dr-img {
+        height: 300px;
+    }
+    .hero-title h1 {
+        font-size: 40px;
+    }
+    .hero-icon i {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-title h1 {
+        font-size: 30px;
+    }
+    .hero-inner-title h3 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+
 /* card section */
 
 .card-container {
@@ -152,6 +225,7 @@ nav-link {
     width: 30%;
     background-color: rgb(240, 233, 233);
     border-radius: 30px;
+    margin: 10px;
 }
 
 .card-dr-content {
@@ -166,7 +240,8 @@ nav-link {
 }
 
 .card-inner-heading {
-    line-height: 32px;
+    font-size: 40px;
+    line-height: 30px;
     margin-bottom: 0px;
     padding-top: 15px;
     margin-top: 15px;
@@ -187,12 +262,45 @@ nav-link {
 }
 
 
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card-dr {
+        width: 45%;
+        /* Adjust width for smaller screens */
+        margin-bottom: 20px;
+        /* Add some space between cards */
+    }
+    .card-inner-heading {
+        font-size: 30px;
+        line-height: 24px;
+        margin-top: 10px;
+        padding-top: 10px;
+        margin-right: 0;
+        border-top: none;
+    }
+    .card-inner-heading h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-dr {
+        width: 80%;
+        /* Adjust width for even smaller screens */
+    }
+}
+
+
 /* entry content section */
 
 .entry-content {
     height: 515px;
     margin: 100px;
-    /* padding: 100px 0 100px 0; */
     display: flex;
     position: relative;
 }
@@ -201,7 +309,6 @@ nav-link {
     width: 50%;
     top: 0;
     position: relative;
-    /* background-color: brown; */
 }
 
 .entry-img1 {
@@ -222,11 +329,75 @@ nav-link {
 
 .entry-content-section {
     width: 50%;
+    height: auto;
     margin: 30px 30px 30px 70px;
 }
 
 .entry-content-section h1 {
+    font-size: 30px;
     color: #031b4e;
+}
+
+.entry-content-section p {
+    font-size: 16px;
+}
+
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .entry-content {
+        flex-direction: column;
+        height: auto;
+        margin: 50px;
+    }
+    .entry-img-section {
+        width: 100%;
+    }
+    .entry-img1,
+    .entry-img2 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .entry-img2 {
+        left: 0;
+        top: 0;
+    }
+    .entry-content-section {
+        width: 70%;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .entry-content {
+        height: auto;
+        margin: 50px;
+        display: block;
+        position: static;
+    }
+    .entry-img-section {
+        width: 100%;
+    }
+    .entry-img1 {
+        height: auto;
+        border-radius: 30px;
+        z-index: 1;
+    }
+    .entry-img2 {
+        height: auto;
+        border-radius: 30px;
+        display: block;
+        position: static;
+        margin-left: 0;
+        margin-top: 0;
+        z-index: 2;
+    }
+    .entry-content-section {
+        width: 100%;
+        margin: 30px auto;
+    }
 }
 
 
@@ -234,7 +405,6 @@ nav-link {
 
 .scroll-bar {
     height: 110px;
-    /* background-color: #c5c9d3; */
 }
 
 .scroll-bar-content h1 {
@@ -243,6 +413,18 @@ nav-link {
     font-weight: 600;
     color: #031b4e;
     overflow: hidden;
+}
+
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .scroll-bar {
+        height: auto;
+    }
+    .scroll-bar-content h1 {
+        font-size: 50px;
+    }
 }
 
 
@@ -292,7 +474,6 @@ nav-link {
     height: 332px;
     width: 700px;
     margin: 10px 0 10px 10px;
-    /* margin-right: 0px; */
     display: flex;
 }
 
@@ -343,116 +524,143 @@ nav-link {
 }
 
 
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .depart-section {
+        flex-direction: column;
+        margin: 40px 10px;
+        height: auto;
+    }
+    .depart-content-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .depart-card-section {
+        width: 100%;
+    }
+    .depart-card-first {
+        width: auto;
+    }
+    #depart-content-heading {
+        font-size: 40px;
+    }
+    #depart-content-para {
+        margin: 30px;
+    }
+}
+
+
 /* Specialist doctors section */
 
 .doctors-section {
-    height: 650px;
-    width: 100%;
-    margin: 50px 0 0 0;
+    margin: 50px 0px;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .doctors-inner-section {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-}
-
-.doctors-inner-section h1 {
-    font-size: 60px;
-    font-weight: 500;
-    color: #031b4e;
-    /* background-color: #3267c5; */
-}
-
-.doctors-img-container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#doctors-specialist {
-    line-height: normal;
-}
-
-#doctors-name {
-    font-size: 25px;
-    color: #031b4e;
+    text-align: center;
 }
 
 .doctors-first-section {
-    height: 400px;
-    width: 23%;
-    margin-top: 30px;
+    display: inline-block;
+    margin: 0 8px;
+    vertical-align: top;
+    width: calc(25% - 20px);
 }
 
-.doctors-first-img1 {
-    height: 300px;
-    width: 300px;
-    border-radius: 30px;
+.doctors-first-img1 img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.doctors-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#doctors-specialist {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#doctors-name {
+    font-size: 20x;
+    color: #031b4e;
+    font-weight: 600;
 }
 
 
 /* Awards section */
 
-.award-section {
-    background-image: url("https://i.pinimg.com/550x/9e/11/67/9e116714a33851fbadeb9f3dbef7fcdd.jpg");
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-    margin-bottom: 50px;
+.award-container {
+    background-color: #031b4e;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.award-inner-section {
+.award-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0 -10px;
 }
 
-.award-first,
-.award-third,
-.award-six,
-.award-eight {
-    height: 200px;
-    width: 250px;
-    margin: 40px;
-    padding: 8px;
-}
-
-.award-heading1 {
-    font-size: 18px;
+.award-item,
+.award-box1,
+.award-box2,
+.award-box3 {
+    flex: 0 1 calc(25% - 20px);
     text-align: center;
-    color: white;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
 }
 
+.award-box2-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.award-heading1,
 .award-heading2 {
-    text-align: center;
-    font-size: 30px;
-    color: white;
+    margin: 0.5em 0;
 }
 
 .award-para {
-    text-align: center;
-    font-weight: 600;
-    color: rgba(250, 246, 246, 0.459)
+    padding: 0 15px;
+    margin-bottom: 1em;
 }
 
-.award-second,
-.award-seven {
-    background-image: url("https://xcare-demo.pbminfotech.com/demo1/wp-content/uploads/sites/3/2024/01/award04.jpg");
-    background-size: cover;
-    height: 200px;
-    width: 250px;
-    margin: 40px;
-    background-color: antiquewhite;
+@media (max-width: 1200px) {
+    .award-item,
+    .award-box1,
+    .award-box2,
+    .award-box3 {
+        flex-basis: calc(33.33% - 20px);
+    }
 }
 
-.award-four,
-.award-five {
-    background-image: url("https://xcare-demo.pbminfotech.com/demo1/wp-content/uploads/sites/3/2024/01/award03.png");
-    background-size: cover;
-    height: 200px;
-    width: 250px;
-    margin: 40px;
+@media (max-width: 992px) {
+    .award-item,
+    .award-box1,
+    .award-box2,
+    .award-box3 {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .award-item,
+    .award-box1,
+    .award-box2,
+    .award-box3 {
+        flex-basis: calc(50% - 20px);
+    }
 }
 
 
@@ -460,11 +668,49 @@ nav-link {
 
 .reacts {
     width: 100%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .rest {
     float: left;
     text-align: center;
-    height: 178px;
+    height: auto;
+}
+
+
+/* Media queries for responsiveness */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .reacts {
+        width: 100%;
+        overflow: hidden;
+    }
+    .rest {
+        width: 100%;
+        float: none;
+        text-align: center;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Medium and Large screens */
+
+@media (min-width: 769px) {
+    .reacts {
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+    .rest {
+        flex: 1;
+        text-align: center;
+        height: 178px;
+        margin-bottom: 0;
+    }
 }
