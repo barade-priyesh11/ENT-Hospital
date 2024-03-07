@@ -16,29 +16,11 @@ body {
 .nav-item,
 nav-link {
     list-style: disc;
-    margin-left: 30px;
-}
-
-.nav-about,
-.nav-inner-about {
-    list-style: disc;
-    margin: 10px 0px 0px 10px;
-    color: #6e778c;
-    text-decoration: none;
+    margin-left: 20px;
 }
 
 .img-thumbnail {
     width: 169px;
-}
-
-.pin {
-    border: 1px solid black;
-    width: 32px;
-    margin-left: 7px;
-    margin-top: 7px;
-    border-radius: 38px;
-    box-shadow: 1px 0px 1px black;
-    background: white;
 }
 
 .fa-magnifying-glass:before,
@@ -47,27 +29,10 @@ nav-link {
     margin-left: 6px;
 }
 
-.room {
-    border: 1px solid black;
-    width: 30px;
-    margin-left: 44px;
-    border-radius: 21px;
-    box-shadow: 1px 0px 1px black;
-}
-
-.zero {
-    border: 1px solid black;
-    width: 16px;
-    margin-bottom: 16px;
-    border-radius: 20px;
-    margin-left: -2px;
-    background: white;
-}
-
 .flex {
     BORDER: 1px solid black;
-    height: 52px;
-    width: 259px;
+    height: auto;
+    width: auto;
     text-align: center;
     padding: 12px;
     border-radius: 30px;
@@ -79,9 +44,9 @@ nav-link {
 
 .fles {
     border: 1px solid black;
-    height: 51px;
+    height: auto;
     padding: 12px;
-    width: 297px;
+    width: auto;
     background: darkblue;
     text-align: center;
     border-radius: 30px;
@@ -90,6 +55,104 @@ nav-link {
 
 .fles a {
     text-decoration: none;
+}
+
+
+/* Media queries for responsiveness */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .nav-item,
+    .nav-link {
+        margin-left: 8px;
+    }
+    .img-thumbnail {
+        width: 120px;
+    }
+    .pin {
+        width: 25px;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-radius: 20px;
+    }
+    .room {
+        width: 25px;
+        margin-left: 30px;
+        border-radius: 15px;
+    }
+    .zero {
+        width: 12px;
+        margin-bottom: 12px;
+        margin-left: -2px;
+    }
+    .flex {
+        width: 200px;
+    }
+    .fles {
+        width: 250px;
+    }
+}
+
+
+/* Large screens */
+
+@media (min-width: 1200px) {
+    .nav-item,
+    .nav-link {
+        margin-left: 15px;
+    }
+    .img-thumbnail {
+        width: 200px;
+    }
+    .pin {
+        width: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 30px;
+    }
+    .room {
+        width: 40px;
+        margin-left: 60px;
+        border-radius: 25px;
+    }
+    .zero {
+        width: 20px;
+        margin-bottom: 20px;
+        margin-left: -3px;
+    }
+    .flex {
+        width: 300px;
+    }
+    .fles {
+        width: 350px;
+    }
+}
+
+
+/*  Media queries for responsiveness  */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        flex-basis: 100%;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+    .navbar-nav .nav-item+.nav-item {
+        margin-top: 10px;
+    }
+    .fles {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
@@ -132,6 +195,58 @@ nav-link {
     font-size: 15px;
     line-height: 25px;
     font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .hero-title h1 {
+        font-size: 50px;
+    }
+    .hero-inner-title h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+    }
+    .dr-img {
+        height: 400px;
+    }
+    .hero-title h1 {
+        font-size: 40px;
+    }
+    .hero-section {
+        margin: 20px;
+    }
+    .hero-inner-title h3 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        margin: 0 10px;
+    }
+    .dr-img {
+        height: 300px;
+        border-radius: 20px;
+    }
+    .hero-title h1 {
+        font-size: 30px;
+    }
+    .hero-inner-title h3 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title h1 {
+        font-size: 25px;
+    }
+    .hero-inner-title h3 {
+        font-size: 11px;
+    }
 }
 
 
@@ -217,6 +332,40 @@ nav-link {
 }
 
 
+/* Responsive Media Queries */
+
+@media (max-width: 768px) {
+    .appoint-section {
+        margin: 50px 20px;
+    }
+    .appoint-content {
+        width: 90%;
+    }
+    #appoint-heading {
+        font-size: 40px;
+    }
+    #appoint-para {
+        font-size: 16px;
+    }
+    .appoint-form {
+        height: auto;
+        width: 90%;
+    }
+    #appoint-form-heading {
+        font-size: 25px;
+    }
+    .appoint-form-input {
+        width: 80%;
+    }
+    .appoint-form textarea {
+        width: 90%;
+    }
+    .appoint-form button {
+        width: 90%;
+    }
+}
+
+
 /* footer section */
 
 .reacts {
@@ -227,5 +376,43 @@ nav-link {
 .rest {
     float: left;
     text-align: center;
-    height: 178px;
+    height: auto;
+}
+
+
+/* Media queries for responsiveness */
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+    .reacts {
+        width: 100%;
+        overflow: hidden;
+    }
+    .rest {
+        width: 100%;
+        float: none;
+        text-align: center;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Medium and Large screens */
+
+@media (min-width: 769px) {
+    .reacts {
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+    .rest {
+        flex: 1;
+        text-align: center;
+        height: 178px;
+        margin-bottom: 0;
+    }
 }
