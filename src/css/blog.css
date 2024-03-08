@@ -375,6 +375,93 @@ header{
 
 }
 
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #Home {background-image: url(../images/blog-img-01.jpg);
+background-repeat: no-repeat;
+background-size: cover;}
+  #News {background-image: url(../images/blog-img-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+  #Contact {background-image: url(../images/blog-img-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+  #About {background-image: url(../images/blog-img-04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+border: 2px solid black;}
+  
+
+
+  /* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+#Tokyo{
+    align-items: center;
+}
+
+#container{
+    display: inline;
+}
+
+
 
 /* 
 color: #031b4e;
