@@ -19,6 +19,29 @@ $(document).ready(function(){
 });
 
 
+ // Add Animate.css classes to the carousel items on hover
+ $('.carousel-item').hover(
+    function () {
+      $(this).addClass('pulse'); // Change 'pulse' to the desired animation class
+    },
+    function () {
+      $(this).removeClass('pulse');
+    }
+  );
+
+
+
+
+  
+//   cards slider javascript
+
+
+
+
+
+
+
+
 
 
 
